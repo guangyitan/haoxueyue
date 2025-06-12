@@ -1,0 +1,5 @@
+// Apply Bootstrap custom variables and import Bootstrap
+@import "bootstrap"; // this is your custom bootstrap.scss file
+
+// Add original project styles
+@import "custom";    // this will be _custom.scss file you create
