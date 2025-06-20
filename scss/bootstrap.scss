@@ -1,0 +1,29 @@
+/******* Customized Bootstrap ********/
+$primary: #fdaf17;
+$light: #fff7e8;
+$dark: #011f41; // dark blue
+
+// $dark: #2f050d; // dark red
+// $dark: #0a200f; // dark green
+// $dark: #332305; // dark yellow
+
+
+$font-family-base: "Fredoka", sans-serif;
+
+$headings-font-family: "DynaPuff", system-ui;
+
+$body-bg: $light;
+
+$body-color: #74787C;
+
+$headings-color: $dark;
+
+$enable-responsive-font-sizes: true;
+
+$border-radius: 10px;
+
+$link-decoration: none;
+
+$enable-negative-margins: true;
+
+@import "bootstrap/scss/bootstrap";
