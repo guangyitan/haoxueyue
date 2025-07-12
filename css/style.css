@@ -57,6 +57,17 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+  .day-cell h3,
+  .time-cell h3 {
+    white-space: nowrap; /* Prevent line break */
+    margin: 0;            /* Remove default h3 spacing */
+    font-size: 1.25rem;   /* Optional: adjust to your size */
+  }
+
+  .day-cell {
+    min-width: 100px;     /* Keep consistent width for day column */
+  }
+
 hr {
   margin: 1rem 0;
   color: inherit;
