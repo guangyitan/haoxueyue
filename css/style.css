@@ -10464,6 +10464,15 @@ textarea.form-control-lg {
   white-space: nowrap;
 }
 
+.schedule-card-body {
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .schedule-card-body {
+    font-size: 1.2rem;
+  }
+}
+
 /* Make contact icons look interactive */
 .contact-icon {
   width: 75px;
