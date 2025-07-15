@@ -10473,6 +10473,11 @@ textarea.form-control-lg {
   }
 }
 
+/* for contact page font weight */
+.contact-container h5, .contact-container .h5 {
+  font-weight: 100 !important;
+}
+
 /* Make contact icons look interactive */
 .contact-icon {
   width: 75px;
