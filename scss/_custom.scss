@@ -67,6 +67,43 @@
     box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
   }
 
+  .contact-wave-animation {
+  position: relative;
+  animation: contactPulseWave 2s infinite;
+  z-index: 1;
+}
+
+@keyframes contactPulseWave {
+  0% {
+    box-shadow: 0 0 0 0 rgb(245, 203, 120)
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+
+  .ws-wave-animation {
+    position: relative;
+    animation: wsPulseWave 2s infinite;
+    z-index: 1;
+}
+
+@keyframes wsPulseWave {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
