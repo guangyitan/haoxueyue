@@ -1,0 +1,26 @@
+{
+  "name": "haoxueyue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+     "sass:build": "sass --no-source-map scss/main.scss:css/style.css",
+    "sass:watch": "sass --no-source-map --watch scss/main.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guangyitan/haoxueyue.git"
+  },
+  "author": "guangyitan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guangyitan/haoxueyue/issues"
+  },
+  "homepage": "https://github.com/guangyitan/haoxueyue#readme",
+  "dependencies": {
+    "sass": "^1.89.2"
+  }
+}
