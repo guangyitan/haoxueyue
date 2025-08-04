@@ -53,6 +53,14 @@
   font-weight: 100 !important;
 }
 
+.map-wrapper {
+  height: 400px;
+
+  @media (min-width: 768px) {
+        height: 725px;
+  }
+}
+
 /* Make contact icons look interactive */
 .contact-icon {
     width: 75px;
