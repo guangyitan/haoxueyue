@@ -10541,8 +10541,8 @@ textarea.form-control-lg {
 }
 .whatsapp-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 40px;
+  right: 30px;
   z-index: 99;
 }
 
@@ -10824,6 +10824,44 @@ h6,
   background: var(--dark);
 }
 
+/* Free Enzymes Styling */
+.highlight-link {
+  border-bottom: 2px solid #74787C;
+  color: #74787C;
+  cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.highlight-link:hover {
+  color: var(--bs-primary);
+  border-bottom-color: var(--bs-primary);
+}
+
+.facebook-icon {
+  color: #0850af;
+}
+
+.social-icon {
+  transition: opacity 0.3s ease;
+}
+
+.social-icon:active {
+  opacity: 0.5;
+}
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+  .highlight-link {
+    display: inline-block;
+    border-bottom: 2px solid #74787C;
+  }
+  .social-icon {
+    transition: opacity 0.3s ease;
+  }
+  .social-icon:active {
+    opacity: 0.5;
+  }
+}
 /*** Footer ***/
 .footer .copyright {
   font-size: 15px;
