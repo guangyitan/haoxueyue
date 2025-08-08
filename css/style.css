@@ -10541,8 +10541,8 @@ textarea.form-control-lg {
 }
 .whatsapp-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 40px;
+  right: 30px;
   z-index: 99;
 }
 
