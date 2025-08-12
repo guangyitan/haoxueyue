@@ -444,6 +444,23 @@ h6,
   }
 }
 
+/*** Ad-Hoc Classes Styling ***/
+#adHocCarousel .carousel-inner {
+    height: 400px; /* fixed height so h-100 works consistently */
+}
+
+#adHocCarousel .carousel-item {
+    height: 100%;
+}
+
+#adHocCarousel .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center; /* force exact centering */
+    display: block;
+}
+
 /*** Footer ***/
 .footer .copyright {
   font-size: 15px;
