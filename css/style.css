@@ -10776,6 +10776,16 @@ h6,
   background: var(--primary) !important;
 }
 
+.icon-hxy {
+  height: 1.5em;
+  vertical-align: bottom;
+}
+
+.icon-haoxueyue {
+  height: 1.3em;
+  vertical-align: bottom;
+}
+
 /*** customer-feedback ***/
 .customer-feedback-carousel {
   padding-left: 1.5rem;
@@ -10862,6 +10872,23 @@ h6,
     opacity: 0.5;
   }
 }
+/*** Ad-Hoc Classes Styling ***/
+#adHocCarousel .carousel-inner {
+  height: 400px; /* fixed height so h-100 works consistently */
+}
+
+#adHocCarousel .carousel-item {
+  height: 100%;
+}
+
+#adHocCarousel .carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center; /* force exact centering */
+  display: block;
+}
+
 /*** Footer ***/
 .footer .copyright {
   font-size: 15px;
