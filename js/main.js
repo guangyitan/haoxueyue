@@ -25,7 +25,7 @@
 
     // Header carousel
     $(".header-carousel").owlCarousel({
-        autoplay: false,
+        autoplay: true,
         smartSpeed: 1500,
         items: 1,
         dots: true,
