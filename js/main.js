@@ -70,4 +70,43 @@
         $('#modalImage').attr('src', imageSrc).attr('alt', imageAlt);
     });
 
+    // Price toggle
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".togglePricesBtn").forEach(btn => {
+            let showingReal = false;
+
+            btn.addEventListener("click", function () {
+                const container = btn.closest(".text-start");
+                const prices = container.querySelectorAll(".price");
+
+                prices.forEach(price => {
+                    const amount = price.dataset.amount;
+                    const suffix = price.dataset.suffix || "";
+                    const num = amount.replace(/\D/g, "");
+
+                    if (showingReal) {
+                        const placeholder = "X".repeat(num.length);
+                        price.textContent = "RM" + placeholder + suffix;
+                    } else {
+                        price.textContent = amount + suffix;
+                    }
+                });
+
+                showingReal = !showingReal;
+
+                const icon = btn.querySelector("i");
+                const label = btn.querySelector(".label");
+
+                if (label.textContent.includes("显示") || label.textContent.includes("隐藏")) {
+                    label.textContent = showingReal ? "隐藏价格" : "显示价格";
+                } else {
+                    label.textContent = showingReal ? "Hide Prices" : "Show Prices";
+                }
+
+                icon.classList.toggle("bi-eye", !showingReal);
+                icon.classList.toggle("bi-eye-slash", showingReal);
+            });
+        });
+    });
+
 })(jQuery);
