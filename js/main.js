@@ -76,7 +76,7 @@
             let showingReal = false;
 
             btn.addEventListener("click", function () {
-                const container = btn.closest(".text-start");
+                const container = btn.closest(".fees-container");
                 const prices = container.querySelectorAll(".price");
 
                 prices.forEach(price => {
