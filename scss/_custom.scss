@@ -343,7 +343,6 @@ h6,
 .breadcrumb-item + .breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
 }
-  
 
 /*** About ***/
 .hover-img img {
@@ -354,6 +353,16 @@ h6,
     background: var(--primary) !important;
 }
 
+//  hao xue yue logo
+.icon-hxy {
+    height: 1.5em;
+    vertical-align: bottom;
+}
+
+.icon-haoxueyue {
+    height: 1.3em;
+    vertical-align: bottom;
+}
 
 /*** customer-feedback ***/
 .customer-feedback-carousel {
@@ -443,6 +452,23 @@ h6,
   .social-icon:active {
     opacity: 0.5;
   }
+}
+
+/*** Ad-Hoc Classes Styling ***/
+#adHocCarousel .carousel-inner {
+    height: 400px; /* fixed height so h-100 works consistently */
+}
+
+#adHocCarousel .carousel-item {
+    height: 100%;
+}
+
+#adHocCarousel .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center; /* force exact centering */
+    display: block;
 }
 
 /*** Footer ***/
