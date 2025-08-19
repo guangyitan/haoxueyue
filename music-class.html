@@ -225,23 +225,28 @@
 
                     <!-- Fees Card -->
                     <div class="card mb-4 shadow border-0">
-                        <div class="card-body bg-light rounded text-dark schedule-card-body">
+                        <div class="card-body bg-light rounded text-dark schedule-card-body fees-container">
                             <div class="row">
                                 <div class="col-6">
                                     <h3 class="card-title">Fees</h3>
                                 </div>
+                                <div class="col-6">
+                                    <button class="btn btn-primary btn-sm togglePricesBtnClass rounded-pill">
+                                        <i class="bi bi-eye"></i> <span class="label">Show Price</span>
+                                    </button>
+                                </div>
                             </div>
                             <div class="row mb-2">
                                 <div class="col-6">7 Years Old ++</div>
-                                <div class="col-6">RM150/month</div>
+                                <div class="col-6 price" data-amount="RM150" data-suffix="/month">RMXXX/month</div>
                             </div>
                             <div class="row mb-2">
                                 <div class="col-6">1st Month 50% OFF</div>
-                                <div class="col-6">RM75/month</div>
+                                <div class="col-6 price" data-amount="RM75" data-suffix="/month">RMXX/month</div>
                             </div>
                             <div class="row">
                                 <div class="col-6">Materials Fee <p style="font-size:14px">(Ukulele, 1 Book, 1 Usb Software)</p></div>
-                                <div class="col-6">RM350</div>
+                                <div class="col-6 price" data-amount="RM350" data-suffix="">RMXXX</div>
                             </div>                            
                         </div>
                     </div>

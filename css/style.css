@@ -10834,6 +10834,18 @@ h6,
   background: var(--dark);
 }
 
+/* Other Classes */
+@media (max-width: 328px) {
+  .togglePricesBtnClass .label {
+    display: none;
+  }
+}
+/* Jom Baca Class*/
+@media (max-width: 340px) {
+  .togglePricesBtnJomBaca .label {
+    display: none;
+  }
+}
 /* Free Enzymes Styling */
 .highlight-link {
   border-bottom: 2px solid #74787C;

@@ -200,27 +200,32 @@
 
                         <!-- Fees Card -->
                         <div class="card mb-4 shadow border-0">
-                            <div class="card-body bg-light rounded text-dark schedule-card-body">
+                            <div class="card-body bg-light rounded text-dark schedule-card-body fees-container">
                                 <div class="row">
                                     <div class="col-6">
                                         <h3 class="card-title">学费</h3>
                                     </div>
+                                    <div class="col-6">
+                                        <button class="btn btn-primary btn-sm togglePricesBtnClass rounded-pill">
+                                            <i class="bi bi-eye"></i> <span class="label">显示价格</span>
+                                        </button>
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">一二三 年级</div>
-                                    <div class="col-6">RM180/月</div>
+                                    <div class="col-6 price" data-amount="RM180" data-suffix="/月">RMXXX/月</div>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">四五六 年级</div>
-                                    <div class="col-6">RM200/月</div>
+                                    <div class="col-6 price" data-amount="RM200" data-suffix="/月">RMXXX/月</div>
                                 </div> 
                                 <div class="row">
                                     <div class="col-6">报名费</div>
-                                    <div class="col-6">RM50（一次）</div>
+                                    <div class="col-6 price" data-amount="RM50" data-suffix="（一次）">RMXX（一次）</div>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">杂项费用</div>
-                                    <div class="col-6">RM150/年</div>
+                                    <div class="col-6 price" data-amount="RM150" data-suffix="/年">RMXXX/年</div>
                                 </div>
                                 <div class="row">
                                     <div class="col-6"></div>

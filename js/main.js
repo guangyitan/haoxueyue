@@ -72,7 +72,7 @@
 
     // Price toggle
     document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll(".togglePricesBtn").forEach(btn => {
+        document.querySelectorAll(".togglePricesBtnClass").forEach(btn => {
             let showingReal = false;
 
             btn.addEventListener("click", function () {
@@ -99,9 +99,12 @@
 
                 if (label.textContent.includes("显示") || label.textContent.includes("隐藏")) {
                     label.textContent = showingReal ? "隐藏价格" : "显示价格";
+                } else if (label.textContent.includes("Tunjuk") || label.textContent.includes("Sembunyi")) {
+                    label.textContent = showingReal ? "Sembunyi Harga" : "Tunjuk Harga";
                 } else {
-                    label.textContent = showingReal ? "Hide Prices" : "Show Prices";
+                    label.textContent = showingReal ? "Hide Price" : "Show Price";
                 }
+
 
                 icon.classList.toggle("bi-eye", !showingReal);
                 icon.classList.toggle("bi-eye-slash", showingReal);
