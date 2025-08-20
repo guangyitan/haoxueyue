@@ -193,6 +193,7 @@
                             <div class="card-body bg-light d-flex flex-column text-center p-4 schedule-card-body text-dark">
                                 <h3 class="card-title mb-3 text-start hxy-red">低年级组</h3>
                                 <div class="text-start mb-3">
+
                                     <h4 class="m-0 fs-5">全五科</h4>
                                     <div class="row">
                                         <div class="col-6">• 华文</div> 
@@ -202,27 +203,36 @@
                                         <div class="col-6">• 英文</div>
                                     </div>
                                 </div>
-                                <div class="text-start mb-3">
-                                    <h4 class="m-0 fs-5">学费 :</h4>
+                                <div class="text-start mb-3 fees-container">
+                                    <div class="row mb-2">
+                                        <div class="col-6">
+                                            <h4 class="fs-5">学费 :</h4>
+                                        </div>
+                                        <div class="col-6">
+                                            <button class="btn btn-primary btn-sm togglePricesBtnClass rounded-pill" onclick="togglePriceClicked(this)">
+                                                <i class="bi bi-eye"></i> <span class="label">显示价格</span>
+                                            </button>
+                                        </div>
+                                    </div>
                                     <div class="row">
                                         <div class="col-6">一年级</div>
-                                        <div class="col-6">RM250/月</div>
+                                        <div class="col-6 price" data-amount="RM250" data-suffix="/月">RMXXX/月</div>
                                     </div>
                                     <div class="row">
                                         <div class="col-6">二年级</div>
-                                        <div class="col-6">RM320/月</div>
+                                        <div class="col-6 price" data-amount="RM320" data-suffix="/月">RMXXX/月</div>
                                     </div> 
                                     <div class="row">
                                         <div class="col-6">三年级</div>
-                                        <div class="col-6">RM340/月</div>
+                                        <div class="col-6 price" data-amount="RM340" data-suffix="/月">RMXXX/月</div>
                                     </div> 
                                     <div class="row">
                                         <div class="col-6">报名费</div>
-                                        <div class="col-6">RM50（一次）</div>
+                                        <div class="col-6 price" data-amount="RM50" data-suffix=" (一次)">RMXX (一次)</div>
                                     </div>
                                     <div class="row">
                                         <div class="col-6">教材费</div>
-                                        <div class="col-6">RM150/年</div>
+                                        <div class="col-6 price" data-amount="RM150" data-suffix="/年">RMXXX/年</div>
                                     </div>
                                 </div>
     
@@ -262,27 +272,36 @@
                                         <div class="col-6">• 历史</div>
                                     </div>
                                 </div>
-                                <div class="text-start mb-3">
-                                    <h4 class="m-0 fs-5">学费 :</h4>
+                                <div class="text-start mb-3 fees-container">
+                                    <div class="row mb-2">
+                                        <div class="col-6">
+                                            <h4 class="fs-5">学费 :</h4>
+                                        </div>
+                                        <div class="col-6">
+                                            <button class="btn btn-primary btn-sm togglePricesBtnClass rounded-pill" onclick="togglePriceClicked(this)">
+                                                <i class="bi bi-eye"></i> <span class="label">显示价格</span>
+                                            </button>
+                                        </div>                                    
+                                    </div>                                    
                                     <div class="row">
                                         <div class="col-6">四年级</div>
-                                        <div class="col-6">RM370/月</div>
+                                        <div class="col-6 price" data-amount="RM370" data-suffix="/月">RMXXX/月</div>
                                     </div>
                                     <div class="row">
                                         <div class="col-6">五年级</div>
-                                        <div class="col-6">RM380/月</div>
+                                        <div class="col-6 price" data-amount="RM380" data-suffix="/月">RMXXX/月</div>
                                     </div> 
                                     <div class="row">
                                         <div class="col-6">六年级</div>
-                                        <div class="col-6">RM400/月</div>
+                                        <div class="col-6 price" data-amount="RM400" data-suffix="/月">RMXXX/月</div>
                                     </div> 
                                     <div class="row">
                                         <div class="col-6">报名费</div>
-                                        <div class="col-6">RM50（一次）</div>
+                                        <div class="col-6 price" data-amount="RM50" data-suffix=" (一次)">RMXX (一次)</div>
                                     </div>
                                     <div class="row">
                                         <div class="col-6">教材费</div>
-                                        <div class="col-6">RM150/年</div>
+                                        <div class="col-6 price" data-amount="RM150" data-suffix="/年">RMXXX/年</div>
                                     </div>
                                 </div>
     

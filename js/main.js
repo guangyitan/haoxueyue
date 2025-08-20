@@ -69,5 +69,46 @@
         var imageAlt = triggerImage.data('image-alt') || 'Image';
         $('#modalImage').attr('src', imageSrc).attr('alt', imageAlt);
     });
-
 })(jQuery);
+
+function togglePriceClicked(btn) {
+    // Get current state from data attribute (default false)
+    let showingReal = btn.dataset.showingReal === "true";
+
+    // Find the container and prices
+    const container = btn.closest(".fees-container");
+    const prices = container.querySelectorAll(".price");
+
+    prices.forEach(price => {
+        const amount = price.dataset.amount;
+        const suffix = price.dataset.suffix || "";
+        const num = amount.replace(/\D/g, "");
+
+        if (showingReal) {
+            const placeholder = "X".repeat(num.length);
+            price.textContent = "RM" + placeholder + suffix;
+        } else {
+            price.textContent = amount + suffix;
+        }
+    });
+
+    // Toggle state and store it back in data attribute
+    showingReal = !showingReal;
+    btn.dataset.showingReal = showingReal;
+
+    // Update label text based on language
+    const icon = btn.querySelector("i");
+    const label = btn.querySelector(".label");
+
+    if (label.textContent.includes("显示") || label.textContent.includes("隐藏")) {
+        label.textContent = showingReal ? "隐藏价格" : "显示价格";
+    } else if (label.textContent.includes("Tunjuk") || label.textContent.includes("Sembunyi")) {
+        label.textContent = showingReal ? "Sembunyi Harga" : "Tunjuk Harga";
+    } else {
+        label.textContent = showingReal ? "Hide Price" : "Show Price";
+    }
+
+    // Toggle eye icon
+    icon.classList.toggle("bi-eye", !showingReal);
+    icon.classList.toggle("bi-eye-slash", showingReal);
+}

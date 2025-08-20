@@ -239,15 +239,20 @@
 
                     <!-- Fees Card -->
                     <div class="card mb-4 shadow border-0">
-                        <div class="card-body bg-light rounded text-dark schedule-card-body">
+                        <div class="card-body bg-light rounded text-dark schedule-card-body fees-container">
                             <div class="row">
                                 <div class="col-6">
                                     <h3 class="card-title">学费</h3>
                                 </div>
+                            <div class="col-6">
+                                <button class="btn btn-primary btn-sm togglePricesBtnClass rounded-pill" onclick="togglePriceClicked(this)">
+                                    <i class="bi bi-eye"></i> <span class="label">显示价格</span>
+                                </button>
+                            </div>
                             </div>
                             <div class="row">
                                 <div class="col-6">7 岁 ++</div>
-                                <div class="col-6">RM180/月</div>
+                                <div class="col-6 price" data-amount="RM180" data-suffix="/月">RMXXX/月</div>
                             </div>                                
                         </div>
                     </div>

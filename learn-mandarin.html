@@ -206,15 +206,20 @@
 
                     <!-- Fees Card -->
                     <div class="card mb-4 shadow border-0">
-                        <div class="card-body bg-light rounded text-dark schedule-card-body">
+                        <div class="card-body bg-light rounded text-dark schedule-card-body fees-container">
                             <div class="row">
                                 <div class="col-6">
                                     <h3 class="card-title">Fees</h3>
                                 </div>
+                                <div class="col-6">
+                                    <button class="btn btn-primary btn-sm togglePricesBtnClass rounded-pill" onclick="togglePriceClicked(this)">
+                                        <i class="bi bi-eye"></i> <span class="label">Show Price</span>
+                                    </button>
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col-6">Standard 1, 2, 3</div>
-                                <div class="col-6">RM80/month</div>
+                                <div class="col-6 price" data-amount="RM80" data-suffix="/month">RMXX/month</div>
                             </div>
                         </div>
                     </div>
