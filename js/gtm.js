@@ -22,7 +22,7 @@ if (!isLocal) {
   }
 
   // Internal Analytics Container
-  loadGTM("internalDataLayer", "GTM-K2PBDNRB");
+  loadGTM("internalDataLayer", "GTM-KSMLH9NQ");
 } else {
   console.log("Google Tag Manager is disabled in local environment.");
 }
